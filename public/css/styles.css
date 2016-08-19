@@ -1,4 +1,24 @@
 body {
-    background: #0147A7;
+    background: #c30e2e;/*#0147A7*/
     color: #fff;
+    margin:0;
+    padding:0;
+}
+ul
+{
+    list-style-type: none;
+}
+::selection {
+    background:#c30e2e; 
+    color:#eee;
+}
+
+::-moz-selection {
+    background:#c30e2e; 
+    color:#eee;
+}
+
+::-webkit-selection {
+    background:#c30e2e; 
+    color:#eee;
 }
