@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 @Component({
-	selector: 'app-homepage',
+	selector: 'alphain-homepage',
 	templateUrl: './homepage.component.html',
 	styleUrls: ['./homepage.component.css']
 })
-export class HomepageComponent { 
-	heroes = ["a","b","c","d","e"];
-}
+export class HomepageComponent { }

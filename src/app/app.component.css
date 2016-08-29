@@ -1,7 +1,12 @@
-main {
-  padding: 1em;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-  display: block;
+div.afcatin {
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	padding: 1em;
+	text-align: center;
+	margin:0;
+	padding:0;
+	display: block;
 }

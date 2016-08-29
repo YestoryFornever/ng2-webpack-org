@@ -1,24 +1,40 @@
+html,body{height:100%;}
 body {
-    background: #c30e2e;/*#0147A7*/
-    color: #fff;
-    margin:0;
-    padding:0;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	/*background: #c30e2e;#0147A7*/
+	color: #333;
+	margin:0;
+	padding:0;
+	font-family:"Microsoft Yahei";
+	font-size:14px;
 }
 ul
 {
-    list-style-type: none;
+	list-style: none;
+	font-size:0;
+	margin:0;
+	padding:0;
+}
+ul{
+	font-size:14px;
 }
 ::selection {
-    background:#c30e2e; 
-    color:#eee;
+	background:#c30e2e; 
+	color:#eee;
 }
-
 ::-moz-selection {
-    background:#c30e2e; 
-    color:#eee;
+	background:#c30e2e; 
+	color:#eee;
 }
-
 ::-webkit-selection {
-    background:#c30e2e; 
-    color:#eee;
+	background:#c30e2e; 
+	color:#eee;
+}
+a,a:active,a:hover{
+	color:#999;
+	text-decoration: none;
 }
