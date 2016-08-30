@@ -7,6 +7,8 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
+import { AppService } from './common/services/app.service';
+
 @NgModule({
 	imports: [
 		BrowserModule,
@@ -16,6 +18,9 @@ import { LoginComponent } from './login/login.component';
 	declarations: [
 		AppComponent,
 		LoginComponent
+	],
+	providers:[
+		AppService
 	],
 	bootstrap: [ AppComponent ]
 })

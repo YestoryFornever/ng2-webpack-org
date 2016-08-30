@@ -7,6 +7,10 @@ import { HomepageComponent } from '../homepage/homepage.component';
 import { PicsComponent } from './pics/pics.component';
 import { ArticleComponent } from './article/article.component';
 
+import { HighlightDirective } from './common/directives/highlight.directive';
+
+import { AwesomePipe } from './common/pipes/awesome.pipe';
+
 @NgModule({
 	imports: [
 		BrowserModule,
@@ -15,7 +19,9 @@ import { ArticleComponent } from './article/article.component';
 	declarations: [
 		HomepageComponent,
 		PicsComponent,
-		ArticleComponent
+		ArticleComponent,
+		HighlightDirective,
+		AwesomePipe
 	]
 })
 export class HomepageModule { }
