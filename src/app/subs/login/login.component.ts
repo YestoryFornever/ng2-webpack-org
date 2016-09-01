@@ -21,8 +21,17 @@ import {
 				backgroundColor: '#333',
 				transform: 'scale(1.1)'
 			})),
-			transition('inactive => active', animate('100ms ease-in')),
-			transition('active => inactive', animate('100ms ease-out'))
+			transition('void=>inactive',[
+				style({
+					transform: 'translateY(100%)'
+				}),
+				animate(300)
+			]),
+			transition('inactive=>void',[style({
+				transform: 'translateY(-100%)'
+			}),animate(100)]),
+			transition('inactive => active', animate('0.2s 100ms ease-in')),
+			transition('active => inactive', animate('0.2s 100ms ease-out'))
 		])
 	]
 })
