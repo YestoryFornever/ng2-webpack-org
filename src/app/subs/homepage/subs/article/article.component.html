@@ -1,1 +1,7 @@
+<div>
+	<input type="radio" name="colors" (click)="color='lightgreen'">Green
+	<input type="radio" name="colors" (click)="color='yellow'">Yellow
+	<input type="radio" name="colors" (click)="color='cyan'">Cyan
+</div>
 <h3 in_highlight *ngIf="article">{{article|awesome}}</h3>
+<h3 [in_highlight]="color" *ngIf="article">{{article|awesome}}</h3>
