@@ -18,15 +18,15 @@ export class HighlightDirective {
 	@Input('in_highlight') highlightColor: string;
 
 	@HostListener('mouseenter') onMouseEnter() {
-		this.highlight(this.highlightColor || this._defaultColor, '30px');
+		this.highlight(this.highlightColor || this._defaultColor, 'white');
 	}
 
 	@HostListener('mouseleave') onMouseLeave() {
 		this.highlight(null,null);
 	}
-	
-	private highlight(color:string,size: string) {
+
+	private highlight(color:string,fontColor: string) {
 		this.el.style.backgroundColor = color;
-		this.el.style.fontSize = size;
+		this.el.style.color = fontColor;
 	}
 }
