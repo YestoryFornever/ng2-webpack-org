@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AppService } from '../../common/services/app.service';
+import { AppService } from '../../../../services/app.service';
 
 @Component({
 	selector: 'alphain-article',

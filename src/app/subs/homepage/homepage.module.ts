@@ -4,12 +4,12 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { homepageRouting } from './homepage.routing';
 
 import { HomepageComponent } from '../homepage/homepage.component';
-import { PicsComponent } from './pics/pics.component';
-import { ArticleComponent } from './article/article.component';
+import { PicsComponent } from './subs/pics/pics.component';
+import { ArticleComponent } from './subs/article/article.component';
 
-import { HighlightDirective } from './common/directives/highlight.directive';
+import { HighlightDirective } from './directives/highlight.directive';
 
-import { AwesomePipe } from './common/pipes/awesome.pipe';
+import { AwesomePipe } from './pipes/awesome.pipe';
 
 @NgModule({
 	imports: [

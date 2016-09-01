@@ -28,7 +28,7 @@ import {
 })
 export class LoginComponent {
 	animateKey="inactive";
-	onClick(el:any,xxx:any){
+	onClick(el:any,xxx:any){//el获取当前组件;xxx获取当前dom对象
 		/*console.log(xxx);
 		console.log(el.animateKey)*/
 		el.animateKey = el.animateKey=='active'?"inactive":"active";
