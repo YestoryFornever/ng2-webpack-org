@@ -6,60 +6,7 @@
 	<router-outlet name="header"></router-outlet>
 </header>
 <main>
-	<!-- <p>main</p> -->
-	<div class="nav">
-		<ul id="nav">
-			<li>
-				<a href="javascript:void(0)">About</a>
-				<ul>
-					<li><a href="javascript:void(0)">About Us</a></li>
-					<li><a href="javascript:void(0)">About Team</a></li>
-					<li>
-						<a href="javascript:void(0)">About You</a>
-						<ul class="xd">
-							<li><a href="javascript:void(0)">More About Us</a></li>
-							<li><a href="javascript:void(0)">More About Team</a></li>
-							<li><a href="javascript:void(0)">More About You</a>
-								<ul class="xd">
-									<li><a [routerLink]="['./' , { outlets: { primary: 'article', header: 'article' , footer:'article'} }]" routerLinkActive="active">Article</a></li>
-									<li><a [routerLink]="['./' , { outlets: { primary: 'pics', header: 'pics' , footer:'pics'} }]" routerLinkActive="active">Pics</a></li>
-									<li><a [routerLink]="['./' , { outlets: { primary: 'error', header: 'error' , footer:'error'} }]" routerLinkActive="active">Error</a></li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li><a href="javascript:void(0)">Header</a>
-				<ul>
-					<li><a [routerLink]="['./' , { outlets: { header: 'article'}}]" routerLinkActive="active">Article</a></li>
-					<li><a [routerLink]="['./' , { outlets: { header: 'pics'}}]" routerLinkActive="active">Pics</a></li>
-					<li><a [routerLink]="['./' , { outlets: { header: 'error'}}]" routerLinkActive="active">Error</a></li>
-				</ul>
-			</li>
-			<li><a href="javascript:void(0)">Main</a>
-				<ul>
-					<li><a [routerLink]="['./','article']" routerLinkActive="active">Article</a></li>
-					<li><a [routerLink]="['./','pics']" routerLinkActive="active">Pics</a></li>
-					<li><a [routerLink]="['./','error']" routerLinkActive="active">Error</a></li>
-				</ul>
-			</li>
-			<li><a href="javascript:void(0)">Footer</a>
-				<ul>
-					<li><a [routerLink]="['./' , { outlets: { footer:'article'} }]" routerLinkActive="active">Article</a></li>
-					<li><a [routerLink]="['./' , { outlets: { footer:'pics'} }]" routerLinkActive="active">Pics</a></li>
-					<li><a [routerLink]="['./' , { outlets: { footer:'error'} }]" routerLinkActive="active">Error</a></li>
-				</ul>
-			</li>
-			<li><a href="javascript:void(0)">All</a>
-				<ul>
-					<li><a [routerLink]="['./' , { outlets: { primary: 'article', header: 'article' , footer:'article'} }]" routerLinkActive="active">Article</a></li>
-					<li><a [routerLink]="['./' , { outlets: { primary: 'pics', header: 'pics' , footer:'pics'} }]" routerLinkActive="active">Pics</a></li>
-					<li><a [routerLink]="['./' , { outlets: { primary: 'error', header: 'error' , footer:'error'} }]" routerLinkActive="active">Error</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+	<alphain-nav></alphain-nav>
 	<div class="content-route">
 		<router-outlet></router-outlet>
 	</div>

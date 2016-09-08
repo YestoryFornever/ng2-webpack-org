@@ -7,6 +7,7 @@ import { HomepageComponent } from '../homepage/homepage.component';
 import { PicsComponent } from './subs/pics/pics.component';
 import { ArticleComponent } from './subs/article/article.component';
 import { ErrorComponent } from './subs/error/error.component';
+import { NavComponent } from './subs/nav/nav.component';
 
 import { HighlightDirective } from './directives/highlight.directive';
 
@@ -22,6 +23,8 @@ import { AwesomePipe } from './pipes/awesome.pipe';
 		PicsComponent,
 		ArticleComponent,
 		ErrorComponent,
+		NavComponent,
+
 		HighlightDirective,
 		AwesomePipe
 	]

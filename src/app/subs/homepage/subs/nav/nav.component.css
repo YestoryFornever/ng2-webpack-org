@@ -1,0 +1,62 @@
+/*Menu*/
+div.nav{
+	background-color:#333;
+	height:100%;
+	width:150px;
+	float:left;
+}
+#nav {
+	background: #333333;
+	float: left;
+	margin: 0; padding: 0;
+	border-bottom: none;
+}
+#nav li {
+	list-style: none;
+	position: relative;
+}
+#nav li a {
+	text-decoration: none;
+	color: white;
+	background: #333333;
+	display:block;
+	width:150px;
+	height:50px;
+	line-height:50px;
+}
+#nav li a:hover {
+	background: #111111;
+}
+
+/* Submenu */
+#nav li ul {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	padding: 0; margin: 0;
+}
+#nav li:hover > ul {
+	display: block;
+}
+
+#nav li ul li,
+#nav li ul li a {
+	float: none;
+}
+* html #nav li ul li {
+	display: inline; for IE6
+}
+#nav li ul li a {
+	display: block;
+}
+#nav li ul {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0px;
+	padding: 0; margin: 0;
+}
+#nav li:hover > ul {
+	display: block;
+}
