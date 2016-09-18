@@ -1,3 +1,6 @@
 h3{
 	display: inline;
 }
+div.module:nth-child(even){
+	background:#eee;
+}

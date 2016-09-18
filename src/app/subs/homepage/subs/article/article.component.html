@@ -1,3 +1,4 @@
+
 <div>
 	<input type="radio" name="colors" (click)="color='lightgreen'">Green
 	<input type="radio" name="colors" (click)="color='yellow'">Yellow
@@ -5,3 +6,34 @@
 </div>
 <h3 in_highlight *ngIf="article">{{article|awesome}}</h3>
 <h3 [in_highlight]="color" *ngIf="article">{{article|awesome}}</h3>
+
+<div class="module">
+	<span>{{myArr.name}}</span>	
+</div>
+<div class="module">
+	<span>1模板引用变量(trv:template reference variables)</span>
+	<input (keyup)="0" #userinput type="text" value="xxx"><br>
+	<span>{{userinput.value}}</span>
+</div>
+<span style="background:grey;color:#eee;">{{test}}</span>
+<div class="module">
+	<span>2keyup 通过$event获取值</span>
+	<input (keyup)="onKeyUpMe($event)" type="text">
+</div>
+<div class="module">
+	<span>3keyup 通过“模板引用变量获”取值</span>
+	<input (keyup)="onKeyUpMePlus(userinputplus.value)" #userinputplus type="text">
+</div>
+<div class="module">
+	<span>4keyup 通过“模板引用变量获”取值(回车+失焦)</span>
+	<input (keyup.enter)="onKeyUpMePlusEnter(userinputplusenter.value)" (blur)="test=userinputplusenter.value" #userinputplusenter type="text">	
+</div>
+<div class="module">
+	<span>5双向数据绑定model module.ts文件需要import FormsModule</span>
+	<input type="text" [(ngModel)]="test">
+</div>
+<div class="module">
+	<ul *ngIf="arraies.length>3">
+		<li (click)="onClickMe(array)" *ngFor="let array of arraies">{{array.name}}</li>
+	</ul>
+</div>

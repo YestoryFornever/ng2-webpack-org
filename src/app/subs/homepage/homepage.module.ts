@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 import { homepageRouting } from './homepage.routing';
 
@@ -16,6 +17,7 @@ import { AwesomePipe } from './pipes/awesome.pipe';
 @NgModule({
 	imports: [
 		BrowserModule,
+		FormsModule,
 		homepageRouting
 	],
 	declarations: [
