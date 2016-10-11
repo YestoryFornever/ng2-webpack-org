@@ -1,6 +1,17 @@
 <div class="nav">
 	<ul id="nav">
 		<li>
+			<a href="javascript:void(0)">开发指南</a>
+			<ul>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'iffor'} }]" routerLinkActive="active">ngIf ngFor</a></li>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'databind'} }]" routerLinkActive="active">data-bind</a></li>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'form'} }]" routerLinkActive="active">form</a></li>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'jit'} }]" routerLinkActive="active">jit</a></li>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'module'} }]" routerLinkActive="active">module</a></li>
+				<li><a [routerLink]="['./' , { outlets: { primary: 'hero'} }]" routerLinkActive="active">hero</a></li>
+			</ul>
+		</li>
+		<li>
 			<a href="javascript:void(0)">About</a>
 			<ul>
 				<li><a href="javascript:void(0)">About Us</a></li>

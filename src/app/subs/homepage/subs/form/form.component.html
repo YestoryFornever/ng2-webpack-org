@@ -1,0 +1,21 @@
+<div class="container">
+	<h1>登陆页面测试</h1>
+	<span>{{model.name}}</span>
+	<div  [hidden]="submitted" >
+		<form *ngIf="active" (ngSubmit)="onSubmit()" #heroForm="ngForm" >
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name" name="name" [(ngModel)]="model.name" #spy #xxx="ngModel" (click)="onClickMe(xxx,spy)" required />
+				<div [hidden]=" xxx.valid || xxx.pristine" class="alert alert-danger">
+					Name is required
+				</div>
+				<span style="color:cadetblue;">{{spy.className}}</span>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" class="form-control" id="password">
+			</div>
+			<button [disabled]="!heroForm.form.valid" type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+</div>

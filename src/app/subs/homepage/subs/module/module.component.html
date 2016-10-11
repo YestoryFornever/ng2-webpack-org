@@ -1,0 +1,3 @@
+<p>{{aaa}}+{{bbb}}={{aaa+bbb}}</p>
+<input [value]="aaa" (input)="aaa=$event.target.value" (change)="onChange($event,this)">
+<input [(ngModel)]="bbb">
